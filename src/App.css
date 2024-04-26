@@ -1,38 +1,363 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    text-decoration: none;
+    color: rgb(63, 94, 191);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.black__button{
+    min-height: 7%;
+    padding: 15px;
+    background-color: #2c3245;
+    font-size: 16px;
+    color:#fffefb;
+    border-radius: 9em;
+}
+.yellow__button{
+    display: flex;
+    border-radius: 9em;
+    background-color: #ffc840;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    margin: 60px 0;
 }
 
-.App-link {
-  color: #61dafb;
+button:focus{
+    border: none;
+}
+.border:active{
+    border:none
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+@media screen and (max-width:820px) {
+    .header__menu__linksBlock__leftBlock a{
+        font-size: 16px;
+    }
+    .header__menu__linksBlock__rightBlock a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .header__mainContent__button{
+        margin: 20px 0 0;
+        padding: 15px 0;
+    }
+
+    .main__first__block{
+        padding-bottom: 100px;
+    }
+    .main__first__block h2{
+        font-size: 52px;
+        line-height: 68px;
+        text-align: center;
+    }
+    .main__second__block{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+    .main__second__block__right{
+        margin: 100px 0 45px;
+        text-align: center;
+    }
+
+    .main__third__block{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main__third__block__child{
+        padding: 30px 0;
+        
+    }
+
+    .main__sixth__block{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__sixth__block__left{
+        text-align: center;
+        margin-bottom: 30px; ;
+    }
+    .main__seventh__block{
+        flex-direction: column;
+    }
+    .main__seventh__block div{
+        width: 100%;
+    }
+    .main__seventh__block__left{
+        padding: 40px;
+    }
+    .main__seventh__block__left__border{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main__seventh__block__left__header3{
+        text-align: center;
+    }
+    .main__eighth__block{
+        flex-direction: column;
+    }
+    .main__eighth__block div{
+        width: 100%;
+    }
+    .main__eighth__block__left {
+
+        margin:0 auto;
+    }
+
+    .main__eighth__block__right{
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main__ninth__block__reviewExamples{
+        flex-wrap: wrap;
+    }
+    .main__ninth__block__reviewExamples__card{
+        width: 40%;
+    }
+    .main__tenth__block{
+        padding:20px 0
+    }
+    .main__forteenth__block{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main__sixteenth__block__list div{
+        margin: 20px 0 0;
+    }
+
+    .footer__limiter{
+        padding: 30px 60px;
+    }
+}
+
+@media screen and (max-width:651px){
+
+    menu{
+        padding: 15px 5px 5px 15px;
+        transition: all .5s;
+    }
+
+    .header__menu__linksBlock {
+        transition: all .5s ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 16px;
+        line-height: 10px;
+        width: 250px;
+        position: absolute;
+        left: -290px;
+        top: 0;
+        background-color:#2c3245;
+        padding: 95px 20px 20px;
+    }
+
+    .header__menu__linksBlock div{
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+    }
+
+    .burger{
+        display: block;
+        transition: all .5s ;
+    }
+
+    .header__menu.mobile__burger .header__menu__linksBlock{
+        transform: translateX(99%);
+    }
+    .header__menu.mobile__burger .span:nth-child(1){
+        transform: rotate(45deg);
+    }
+
+    .header__menu.mobile__burger .span:nth-child(2){
+        opacity: 0;
+    }
+
+    .header__menu.mobile__burger .span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+
+    .header__mainContent__button{
+        font-size: 16px;
+        width: 150px;
+        margin: 20px 0;
+        padding: 10px  0;
+    }
+
+    .header__mainContent__right{
+        display: none;
+    }
+
+    .main__eighth__block__left__svg{
+        display: none;
+    }
+}
+
+@media screen and (max-width:536px) {
+
+    .main__ninth__block__reviewExamples__card{
+        width: 90%;
+    }
+    .main__tenth__block{
+        padding:60px 20px
+
+    }
+
+    .main__tenth__block__header2{
+        margin: 60px auto;
+    }
+
+
+}
+
+@media screen and (max-width:426px) {
+
+    .main__first__block{
+        padding: 60px 0 ;
+    }
+
+    .main__first__block h2{
+        font-size: 40px;
+    }
+
+    .main__second__block__right{
+        text-align: center;
+        margin: 40px 0 45px;
+    }
+    .main__fivth__block__header2 {
+        font-size: 50px;
+    }
+    .main__sixth__block__right__list{
+        margin: 0 auto;
+        width: 95%;
+    }
+    .main__seventh__block{
+        flex-direction: column;
+    }
+    .main__seventh__block__left{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 0;
+        width: 100%;
+    }
+    .main__seventh__block__right{
+        width: 100%;
+    }
+    .main__seventh__block__left__button{
+        margin:3em  ;
+    }
+    .main__eighth__block__left__toastImg{
+        width: 100vw;
+    }
+    .main__eleventh__block{
+        padding: 60px  20px;
+    }
+    .main__eleventh__block__ul__li{
+        font-size: 16px;
+    }
+
+
+
+    .main__fivtetnth__block{
+        margin: 0;
+        padding: 80px 0;
+    }
+
+    .main__fivtetnth__block__paragraph{
+        font-size: 16px;
+    }
+
+    .main__sixteenth__block{
+        padding: 60px 0px ;
+    }
+    .main__sixteenth__block__more{
+        text-align: center;
+    }
+    .main__sixteenth__block__list__item{
+        margin: 10px 10px;
+        font-size: 16px;
+    }
+    .main__sixteenth__block__list__item__image{
+        height: 30px;
+    }
+    .biggerArrowDown{
+        height: 60px;
+    }
+    .main__sixteenth__block__list div{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:376px) {
+
+    .main__seventh__block__left__button{
+        margin:2em  ;
+    }
+
+    .main__first__block__rating{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__first__block__rating__paragraph{
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and (max-width:320px){
+
+    .header__mainContent__head1{
+        font-size: 28px;
+    }
+
+    .main__second__block__right__header3{
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .main__seventh__block__left__button{
+        margin:1.5em 0.4em  0;
+    }
+
+
+    .footer__limiter{
+        text-align: center;
+        line-height: 24px;
+    }
 }

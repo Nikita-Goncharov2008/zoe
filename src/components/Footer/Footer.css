@@ -1,0 +1,57 @@
+
+.footer{
+    margin: 0 auto;
+    max-width: 1000px;
+    border-bottom:1px solid rgb(169, 169, 169);
+}
+
+.footer__limiter{
+    display: flex;
+    justify-content: start;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer__links{
+    display: flex;
+    gap: 30px   ;
+}
+
+
+
+.footer__links__company{
+    list-style: none;
+}
+
+.footer__links__company h4{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.footer__links__company li{
+    margin:8px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer__links__resources{
+    list-style: none;
+}
+
+.footer__links__resources h4{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.footer__links__resources li{
+    margin:8px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.copyrighted{
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 1000px;
+}
